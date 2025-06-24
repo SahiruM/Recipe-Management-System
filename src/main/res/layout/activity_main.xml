@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipeRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/addRecipeButton"
+        android:layout_below="@id/signUpButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        tools:ignore="NotSibling" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:text="Sign In" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Sign Up" />
+
+    <!-- RecyclerView for displaying recipe list -->
+
+    <!-- Button to add a new recipe -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Other UI elements -->
+
+        <!-- Vertical layout for buttons positioned on the right side -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="end|center_vertical"
+            android:layout_margin="16dp">
+
+            <!-- Add Recipe Button -->
+            <ImageView
+                android:id="@+id/addRecipeButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="Add Recipe Icon"
+                android:src="@drawable/ic_add"
+                android:layout_marginBottom="12dp"
+                app:tint="@color/black" />
+
+            <!-- View Favorites Button -->
+            <ImageView
+                android:id="@+id/viewFavButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="View Favorites Icon"
+                android:src="@drawable/ic_favorite"
+                app:tint="@color/black" />
+
+            <ImageView
+                android:id="@+id/buttonSignOut"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="Sign Out Button"
+                android:src="@drawable/ic_signout"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="12dp"
+                app:tint="@color/black" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

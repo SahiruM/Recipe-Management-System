@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RecipeApp__3</string>
+    <string name="ingredients_label">Ingredients:</string>
+    <string name="steps_label">Steps:</string>
+    <string name="nutritional_info_label">Nutritional Info:</string>
+    <string name="add_recipe">Add Recipe</string>
+</resources>

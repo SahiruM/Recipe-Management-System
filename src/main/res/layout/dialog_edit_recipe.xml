@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFF5E5"
+    android:gravity="center"
+    tools:ignore="ExtraText"> <!-- Light beige background for a warm feel -->
+
+    <!-- Centered Title Section -->
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD YOUR RECIPE"
+        android:textColor="#5D4037"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" /> <!-- Space between title and inputs -->
+
+    <!-- Middle Section for Inputs and Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Recipe Title Input -->
+        <EditText
+            android:id="@+id/inputRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Recipe Title"/>
+
+        <!-- Image URL Input -->
+        <EditText
+            android:id="@+id/inputRecipeImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Image URL"/>
+
+        <!-- Ingredients Input -->
+        <EditText
+            android:id="@+id/inputRecipeIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingredients (comma-separated)"/>
+
+        <!-- Steps Input -->
+        <EditText
+            android:id="@+id/inputRecipeSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Steps (comma-separated)"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveRecipeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tint="#FF7043"
+            android:backgroundTint="#FF7043"
+            android:text="Save Recipe"/>
+    </LinearLayout>
+
+</LinearLayout>
